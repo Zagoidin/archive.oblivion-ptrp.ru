@@ -81,6 +81,14 @@ h1 {
     width:              50%;
     transition:         all 1s;
 }
+.fracs>div>h2 {
+    font-size:          2cqw;
+    text-shadow:        0 0 10px black;
+}
+.fracs>div>p {
+    font-size:          1cqw;
+    text-shadow:        0 0 10px black;
+}
 .fracs>h3 {
     width:              10%;
     height:             10vh;
@@ -97,10 +105,73 @@ h1 {
     background:         linear-gradient(to right, rgb(25, 9, 40), transparent);
     text-align:         left;
     padding-left:       2vw;
-    Font-family:        mono;
+    font-family:        mono;
 }
 #offsprings {
     background:         linear-gradient(to left, rgb(7, 18, 36), transparent);
     text-align:         right;
     padding-right:      2vw;
+    font-family:        oldsov;
+}
+#offsprings > h2 {
+    font-size:          1.6cqw;
+}
+#offsprings > p {
+    font-size:          0.8cqw;
+}
+.npcs {
+    height:             34vh;
+    width:              90vw;
+}
+.npcs>ul {
+    width:              100%;
+    height:             100%;
+    display:            flex;
+    flex-direction:     row;
+    overflow:           scroll;
+    scrollbar-color:    rgb(15, 15, 15) black;
+    scrollbar-width:    auto;
+    scrollbar-gutter:   stable both-edges;
+    list-style-type:    none;
+    gap:                1%;
+    justify-content:    space-around;
+    align-items:        center;
+    padding-inline:     2cqw;
+}
+.npcs>ul>li {
+    height:             90%;
+    min-width:          20vw;
+    flex-grow:          0;
+    overflow:           hidden;
+    border-radius:      0.3cqw;
+    transition:         transform 0.4s;
+    border:             0.2cqw solid rgb(38, 38, 38);
+    display:            flex;
+    flex-direction:     column;
+    align-items:        center;
+}
+.npcs>ul>li>h2 {
+    font-size:          2cqw;
+    font-family:        patebold;
+    text-align:         center;
+    margin:             0.5cqw;
+}
+.npcs>ul>li>p {
+    font-size:          1cqw;
+    font-family:        mono;
+    text-align:         center;
+    margin:             0;
+}
+.npcs>ul>li:hover {
+    transform:          scale(1.02);
+}
+.npcs>ul>li.offspringsnpc {
+    border:             0.2cqw solid rgb(20, 37, 58);
+}
+.npcs>ul>li.phobosnpc {
+    border:             0.2cqw solid rgb(31, 20, 58);
+}
+.npcimg {
+    height:             60%;
+    margin-inline:      auto;      
 }
