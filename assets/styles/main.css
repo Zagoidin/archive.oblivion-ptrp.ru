@@ -74,7 +74,7 @@ h1 {
     display:            flex;
     flex-direction:     row;
     justify-content:    space-between;
-    height:             30vh;
+    height:             16vw;
 }
 .fracs>div {
     flex-grow:          1;
@@ -88,6 +88,7 @@ h1 {
 .fracs>div>p {
     font-size:          1cqw;
     text-shadow:        0 0 10px black;
+    Width:              32vw;
 }
 .fracs>h3 {
     width:              10%;
@@ -96,21 +97,28 @@ h1 {
     font-family:        zozh;        
     font-size:          3cqw;
     text-align:         center;
-    color:              rgb(119, 119, 119);
+    color:              rgba(255, 255, 255, 0.756);
 }
 .fracs > div:hover {
-    width:                  67%;
+    width:                  35%;
 }
 #phobos {
-    background:         linear-gradient(to right, rgb(25, 9, 40), transparent);
+    background:         linear-gradient(to right, rgb(25, 9, 40), transparent), 
+                        url(../pics/phobos-beta-logo.png);
+    background-size:    auto, auto 120%;
+    background-repeat:  no-repeat;
+    background-position:center;
     text-align:         left;
     padding-left:       2vw;
     font-family:        mono;
 }
 #offsprings {
-    background:         linear-gradient(to left, rgb(7, 18, 36), transparent);
+    background:         linear-gradient(to left, rgb(7, 18, 36), transparent), 
+                        url(../pics/offsprings-beta-logo.png);
+    background-size:    auto, auto 120%;
+    background-repeat:  no-repeat;
+    background-position:center;
     text-align:         right;
-    padding-right:      2vw;
     font-family:        oldsov;
 }
 #offsprings > h2 {
@@ -118,6 +126,9 @@ h1 {
 }
 #offsprings > p {
     font-size:          0.8cqw;
+    margin-left:        auto;
+    margin-right:       2vw;
+    margin-top:         2.3cqw;
 }
 .npcs {
     height:             34vh;
@@ -141,6 +152,7 @@ h1 {
 .npcs>ul>li {
     height:             90%;
     min-width:          20vw;
+    background-color:   rgb(17, 17, 17);
     flex-grow:          0;
     overflow:           hidden;
     border-radius:      0.3cqw;
